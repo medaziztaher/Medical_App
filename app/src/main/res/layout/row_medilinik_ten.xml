@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="medilinikTenRowModel" type="com.mohamednethirsapplication.app.modules.medilinikten.data.model.MedilinikTenRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackfollowthese"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearRow"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylewhite_5">
+            <ImageView android:id="@+id/imageImagesOne"
+                android:layout_height="@dimen/_47pxh"
+                android:layout_marginBottom="@dimen/_24pxv"
+                android:layout_marginStart="@dimen/_6pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="@dimen/_33pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_images1"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_images1"/>
+            <LinearLayout android:id="@+id/linearRowfollowthese"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_14pxv"
+                android:layout_marginEnd="@dimen/_6pxh"
+                android:layout_marginStart="@dimen/_21pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_weight="0.88" android:layout_width="0dp" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtFollowthese"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_13pxv"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_weight="0.77"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{medilinikTenRowModel.txtFollowthese}"
+                    style="@style/txtPoppinsregular16_1" tools:text="@string/msg_follow_these"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumntime"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_109pxh"
+                    android:layout_weight="0.23"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtTimeOne"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{medilinikTenRowModel.txtTimeOne}"
+                        style="@style/txtPoppinsregular16" tools:text="@string/lbl_11_00"/>
+                    <FrameLayout
+                        android:id="@+id/frameStackellipsetwentyfive"
+                        android:layout_height="@dimen/_29pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_6pxv" android:layout_width="@dimen/_26pxh">
+                        <View
+                            android:background="@drawable/rectangle_bg_teal_400_c6_radius_14_5"
+                            android:id="@+id/viewEllipseTwentyFive"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_29pxh" android:layout_width="@dimen/_26pxh"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtTwoOne"
+                            android:layout_gravity="top|center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_8pxh"
+                            android:layout_marginStart="@dimen/_8pxh"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{medilinikTenRowModel.txtTwoOne}"
+                            style="@style/txtPoppinsregular16_2" tools:text="@string/lbl_2"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtDrZeinebKhar"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_53pxh"
+            android:layout_marginStart="@dimen/_53pxh"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{medilinikTenRowModel.txtDrZeinebKhar}"
+            style="@style/txtPoppinsbold15" tools:text="@string/msg_dr_zeineb_khar"/>
+    </FrameLayout>
+</layout>

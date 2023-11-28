@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="frameVM" type="com.mohamednethirsapplication.app.modules.frame.data.viewmodel.FrameVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnvector"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearRole"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <FrameLayout android:gravity="start"
+                android:id="@+id/frameAllheader"
+                android:layout_height="@dimen/_89pxv" android:layout_width="match_parent">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarToolbar"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    app:contentInsetStart="0dp" style="@style/groupStyleteal_400_c6">
+                    <LinearLayout android:id="@+id/linearRowvector"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <FrameLayout android:id="@+id/frameStackvector"
+                            android:layout_height="@dimen/_21pxv"
+                            android:layout_marginBottom="@dimen/_1pxv" android:layout_width="@dimen/_57pxh">
+                            <ImageView android:id="@+id/imageVector"
+                                android:layout_gravity="top|start"
+                                android:layout_height="@dimen/_20pxh"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_width="@dimen/_30pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_vector"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_vector"/>
+                            <ImageView android:id="@+id/imageVectorOne"
+                                android:layout_gravity="bottom|end"
+                                android:layout_height="@dimen/_20pxh"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="@dimen/_27pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_vector_black_900"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_vector_black_900"/>
+                        </FrameLayout>
+                        <ImageView android:id="@+id/imageVectorTwo"
+                            android:layout_height="@dimen/_15pxh"
+                            android:layout_marginStart="@dimen/_7pxh"
+                            android:layout_marginTop="@dimen/_6pxv"
+                            android:layout_width="@dimen/_30pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_vector_black_900_15x30"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_vector_black_900_15x30"/>
+                    </LinearLayout>
+                </androidx.appcompat.widget.Toolbar>
+                <FrameLayout android:id="@+id/frameStackellipseone"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_90pxv"
+                    android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_187pxh">
+                    <ImageView android:id="@+id/imageEllipseOne"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_90pxh"
+                        android:layout_width="@dimen/_187pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_ellipse1}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse1"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTime"
+                        android:layout_gravity="top|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_21pxv"
+                        android:layout_marginEnd="@dimen/_41pxh"
+                        android:layout_marginStart="@dimen/_41pxh"
+                        android:layout_marginTop="@dimen/_21pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{frameVM.frameModel.txtTime}"
+                        style="@style/txt" tools:text="@string/lbl_15_38_pm"/>
+                </FrameLayout>
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{frameVM.frameModel.txtLanguage}"
+                style="@style/txtPoppinsextrabold64_1" tools:text="@string/lbl_medilink"/>
+            <ImageView android:id="@+id/image36386535814759"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_255pxh"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_63pxv"
+                android:layout_width="@dimen/_255pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_36386535814759}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_36386535814759"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnNext"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_93pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_17pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_17pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_next"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_1" tools:text="@string/lbl_next"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

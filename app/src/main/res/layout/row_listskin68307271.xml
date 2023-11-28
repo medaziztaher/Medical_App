@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listskin68307271RowModel" type="com.mohamednethirsapplication.app.modules.mediliniknine.data.model.Listskin68307271RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearSpecialities"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <FrameLayout android:id="@+id/frameStackdermathology"
+            android:layout_height="@dimen/_88pxv"
+            android:layout_marginTop="@dimen/_2pxv" android:layout_width="@dimen/_107pxh">
+            <FrameLayout android:id="@+id/frameStackskin68307271"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_88pxv"
+                android:layout_marginStart="@dimen/_2pxh"
+                android:layout_width="@dimen/_105pxh" style="@style/groupStylewhite_3">
+                <ImageView android:id="@+id/imageSkin68307271"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_28pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_35pxh"
+                    android:layout_marginStart="@dimen/_35pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_width="@dimen/_26pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_skin68307271"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_skin68307271"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtDermathology"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listskin68307271RowModel.txtDermathology}"
+                style="@style/txtPoppinsitalic14" tools:text="@string/lbl_dermathology"/>
+        </FrameLayout>
+        <LinearLayout android:id="@+id/linearColumninfant2689892"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_2pxv"
+            android:layout_weight="0.33" android:layout_width="0dp"
+            android:orientation="vertical" style="@style/groupStylewhite_2">
+            <ImageView android:id="@+id/imageInfant2689892"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_36pxh"
+                android:layout_marginEnd="@dimen/_36pxh"
+                android:layout_marginStart="@dimen/_36pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="@dimen/_26pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_infant2689892"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_infant2689892"/>
+            <TextView android:ellipsize="end" android:gravity="end"
+                android:id="@+id/txtPediatric"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5pxv"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listskin68307271RowModel.txtPediatric}"
+                style="@style/txtPoppinsitalic15" tools:text="@string/lbl_pediatric"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/frameStackorthopedician"
+            android:layout_height="@dimen/_88pxv"
+            android:layout_marginBottom="@dimen/_2pxv"
+            android:layout_marginStart="@dimen/_7pxh" android:layout_width="@dimen/_107pxh">
+            <FrameLayout android:id="@+id/frameStackfemur39110141"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_88pxv"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_width="@dimen/_105pxh" style="@style/groupStylewhite_2">
+                <ImageView android:id="@+id/imageFemur39110141"
+                    android:layout_gravity="top|end"
+                    android:layout_height="@dimen/_40pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_32pxh"
+                    android:layout_marginStart="@dimen/_32pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_width="@dimen/_35pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_femur39110141"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_femur39110141"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtOrthopedician"
+                android:layout_gravity="bottom|end"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listskin68307271RowModel.txtOrthopedician}"
+                style="@style/txtPoppinsitalic14_1" tools:text="@string/lbl_orthopedician"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

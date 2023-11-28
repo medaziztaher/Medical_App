@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectanglesixThreeRowModel" type="com.mohamednethirsapplication.app.modules.mediliniktwenty.data.model.ListrectanglesixThreeRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackrectanglesixThree"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <ImageView android:id="@+id/imageRectangleSixThree"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_50pxh"
+            android:layout_width="@dimen/_359pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_rectangle6_white_a700"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle6_white_a700"/>
+        <LinearLayout android:id="@+id/linearRowlanguage"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguageThree"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.79" android:layout_width="0dp"
+                android:letterSpacing="0.11"
+                android:lineSpacingExtra="@dimen/_8pxh"
+                android:singleLine="true"
+                android:text="@{listrectanglesixThreeRowModel.txtLanguageThree}"
+                style="@style/txtPoppinsthinitalic16" tools:text="@string/lbl_password"/>
+            <ImageView android:id="@+id/imageVector"
+                android:layout_height="@dimen/_15pxh"
+                android:layout_marginBottom="@dimen/_5pxv"
+                android:layout_marginStart="@dimen/_184pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="@dimen/_24pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_vector_cyan_100_15x22"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_vector_cyan_100_15x22"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

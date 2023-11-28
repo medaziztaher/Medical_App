@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="medilinikFiveVM" type="com.mohamednethirsapplication.app.modules.medilinikfive.data.viewmodel.MedilinikFiveVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnvector"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:id="@+id/frameAllheader"
+            android:layout_height="@dimen/_79pxv" android:layout_width="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                app:contentInsetStart="0dp" style="@style/groupStyleteal_400_c6">
+                <LinearLayout android:gravity="center_vertical"
+                    android:id="@+id/linearRowvector"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <FrameLayout android:id="@+id/frameStackvector"
+                        android:layout_height="@dimen/_21pxv"
+                        android:layout_marginBottom="@dimen/_1pxv" android:layout_width="@dimen/_55pxh">
+                        <ImageView android:id="@+id/imageVector"
+                            android:layout_gravity="top|start"
+                            android:layout_height="@dimen/_20pxh"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="@dimen/_29pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_vector"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_vector"/>
+                        <ImageView android:id="@+id/imageVectorOne"
+                            android:layout_gravity="bottom|end"
+                            android:layout_height="@dimen/_20pxh"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="@dimen/_26pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_vector_black_900"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_vector_black_900"/>
+                    </FrameLayout>
+                    <ImageView android:id="@+id/imageVectorTwo"
+                        android:layout_height="@dimen/_15pxh"
+                        android:layout_marginStart="@dimen/_7pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_width="@dimen/_29pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_vector_black_900_15x30"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_vector_black_900_15x30"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <FrameLayout android:id="@+id/frameStackellipseone"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_79pxv"
+                android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_187pxh">
+                <ImageView android:id="@+id/imageEllipseOne"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_79pxh"
+                    android:layout_width="@dimen/_187pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse1_1}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse1_1"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTime"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_40pxh"
+                    android:layout_marginStart="@dimen/_40pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{medilinikFiveVM.medilinikFiveModel.txtTime}"
+                    style="@style/txt" tools:text="@string/lbl_15_38_pm"/>
+            </FrameLayout>
+        </FrameLayout>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <FrameLayout android:id="@+id/frameStackvectorFour"
+                android:layout_height="@dimen/_844pxv"
+                android:layout_width="@dimen/_387pxh" style="@style/groupStylecornerRadius">
+                <LinearLayout android:id="@+id/linearConnect"
+                    android:layout_gravity="start"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                    <FrameLayout android:id="@+id/frameStackellipsetwo"
+                        android:layout_gravity="end"
+                        android:layout_height="@dimen/_133pxv"
+                        android:layout_marginEnd="@dimen/_110pxh"
+                        android:layout_marginStart="@dimen/_110pxh"
+                        android:layout_marginTop="@dimen/_103pxv" android:layout_width="@dimen/_151pxh">
+                        <ImageView android:id="@+id/imageEllipseTwo"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_129pxv"
+                            android:layout_marginBottom="@dimen/_4pxv"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            cornerRadius="@{@dimen/_75pxh}"
+                            imageRes="@{@drawable/img_ellipse2}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse2"/>
+                        <ImageView android:id="@+id/imageVectorThree"
+                            android:layout_gravity="bottom|end"
+                            android:layout_height="@dimen/_30pxh"
+                            android:layout_marginEnd="@dimen/_2pxh"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="@dimen/_32pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_vector_teal_401"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_vector_teal_401"/>
+                    </FrameLayout>
+                    <LinearLayout android:gravity="end"
+                        android:id="@+id/linearRow"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_33pxh"
+                        android:layout_marginStart="@dimen/_33pxh"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <LinearLayout
+                            android:id="@+id/linearRowvectorFour"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_weight="0.45"
+                            android:layout_width="0dp" android:orientation="horizontal">
+                            <ImageView android:id="@+id/imageVectorFour"
+                                android:layout_height="@dimen/_18pxh"
+                                android:layout_marginBottom="@dimen/_1pxv"
+                                android:layout_marginTop="@dimen/_7pxv"
+                                android:layout_width="@dimen/_18pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_vector_teal_402"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_vector_teal_402"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtGender"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_17pxh"
+                                android:layout_weight="0.7"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{medilinikFiveVM.medilinikFiveModel.txtGender}"
+                                style="@style/txtPoppinsextralightitalic18_1" tools:text="@string/lbl_male"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearRowvectorFive"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_4pxv"
+                            android:layout_marginStart="@dimen/_116pxh"
+                            android:layout_weight="0.55"
+                            android:layout_width="0dp" android:orientation="horizontal">
+                            <ImageView android:id="@+id/imageVectorFive"
+                                android:layout_height="@dimen/_18pxh"
+                                android:layout_marginBottom="@dimen/_1pxv"
+                                android:layout_marginTop="@dimen/_7pxv"
+                                android:layout_width="@dimen/_18pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_vector_teal_402"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_vector_teal_402"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtGenderOne"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_11pxh"
+                                android:layout_weight="0.78"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{medilinikFiveVM.medilinikFiveModel.txtGenderOne}"
+                                style="@style/txtPoppinsextralightitalic18_1" tools:text="@string/lbl_female"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtLanguage"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{medilinikFiveVM.medilinikFiveModel.txtLanguage}"
+                        style="@style/txtPoppinsextralightitalic18_1" tools:text="@string/msg_your_informatio"/>
+                    <FrameLayout
+                        android:id="@+id/frameStackrectangleeight"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_50pxv"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_34pxv" android:layout_width="@dimen/_325pxh">
+                        <ImageView android:id="@+id/imageRectangleEight"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_50pxh"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_rectangle6"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle6"/>
+                        <LinearLayout
+                            android:id="@+id/linearRowlanguageOne"
+                            android:layout_gravity="top|end"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_15pxh"
+                            android:layout_marginStart="@dimen/_15pxh"
+                            android:layout_marginTop="@dimen/_5pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtLanguageOne"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_5pxv"
+                                android:layout_weight="0.84"
+                                android:layout_width="0dp"
+                                android:letterSpacing="0.11"
+                                android:lineSpacingExtra="@dimen/_8pxh"
+                                android:singleLine="true"
+                                android:text="@{medilinikFiveVM.medilinikFiveModel.txtLanguageOne}"
+                                style="@style/txtPoppinsregular16" tools:text="@string/lbl_address"/>
+                            <ImageView android:id="@+id/imageVectorSix"
+                                android:layout_height="@dimen/_27pxh"
+                                android:layout_marginStart="@dimen/_177pxh"
+                                android:layout_marginTop="@dimen/_2pxv"
+                                android:layout_width="@dimen/_15pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_vector_cyan_100_27x15"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_vector_cyan_100_27x15"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/frameStackrectanglenine"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_50pxv"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_17pxv" android:layout_width="@dimen/_327pxh">
+                        <ImageView android:id="@+id/imageRectangleNine"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_50pxh"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_rectangle6"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle6"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtLanguageTwo"
+                            android:layout_gravity="top|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_40pxh"
+                            android:layout_marginStart="@dimen/_40pxh"
+                            android:layout_marginTop="@dimen/_6pxv"
+                            android:layout_width="wrap_content"
+                            android:letterSpacing="0.11"
+                            android:lineSpacingExtra="@dimen/_8pxh"
+                            android:singleLine="true"
+                            android:text="@{medilinikFiveVM.medilinikFiveModel.txtLanguageTwo}"
+                            style="@style/txtPoppinsregular16" tools:text="@string/lbl_date_of_birth"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/frameStackrectangleseven"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_50pxv"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_15pxv" android:layout_width="@dimen/_325pxh">
+                        <ImageView android:id="@+id/imageRectangleSeven"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_50pxh"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_rectangle6"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle6"/>
+                        <LinearLayout
+                            android:id="@+id/linearRowlanguageThree"
+                            android:layout_gravity="top|end"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_17pxh"
+                            android:layout_marginStart="@dimen/_17pxh"
+                            android:layout_marginTop="@dimen/_6pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtLanguageThree"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:layout_width="0dp"
+                                android:letterSpacing="0.11"
+                                android:lineSpacingExtra="@dimen/_8pxh"
+                                android:singleLine="true"
+                                android:text="@{medilinikFiveVM.medilinikFiveModel.txtLanguageThree}"
+                                style="@style/txtPoppinsregular16" tools:text="@string/lbl_civil_estate"/>
+                            <ImageView
+                                android:id="@+id/imageVectorSeven"
+                                android:layout_height="@dimen/_9pxh"
+                                android:layout_marginBottom="@dimen/_3pxv"
+                                android:layout_marginStart="@dimen/_146pxh"
+                                android:layout_marginTop="@dimen/_11pxv"
+                                android:layout_width="@dimen/_12pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_vector_cyan_100_9x12"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_vector_cyan_100_9x12"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/frameStackrectanglesix"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_50pxv"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_15pxv" android:layout_width="@dimen/_327pxh">
+                        <ImageView android:id="@+id/imageRectangleSix"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_50pxh"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_rectangle6"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle6"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="top|start"
+                            android:id="@+id/txtLanguageFour"
+                            android:layout_gravity="top|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_11pxv"
+                            android:layout_marginEnd="@dimen/_39pxh"
+                            android:layout_marginStart="@dimen/_39pxh"
+                            android:layout_marginTop="@dimen/_11pxv"
+                            android:layout_width="match_parent"
+                            android:letterSpacing="0.11"
+                            android:lineSpacingExtra="@dimen/_8pxh"
+                            android:singleLine="true"
+                            android:text="@{medilinikFiveVM.medilinikFiveModel.txtLanguageFour}"
+                            style="@style/txtPoppinsthinitalic16" tools:text="@string/lbl_nombre_d_enfant"/>
+                    </FrameLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnNext"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_20pxv"
+                        android:layout_marginEnd="@dimen/_25pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_20pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_15pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_15pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_next"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded_3" tools:text="@string/lbl_next"/>
+                </LinearLayout>
+            </FrameLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

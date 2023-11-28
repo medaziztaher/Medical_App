@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="griddoctor3481061RowModel" type="com.mohamednethirsapplication.app.modules.medilinikthree.data.model.Griddoctor3481061RowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackdoctor3481061"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" style="@style/groupStylebluegray_100cornerRadius">
+        <ImageView android:id="@+id/imageDoctor3481061"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_78pxh"
+            android:layout_marginBottom="@dimen/_12pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="@dimen/_63pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_doctor3481061}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_doctor3481061"/>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="doctorsRowModel" type="com.mohamednethirsapplication.app.modules.medilinikeight.data.model.DoctorsRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackimggeneralhos"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearRowimggeneralhos"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylewhite_4">
+            <ImageView android:id="@+id/imageImggeneralhos"
+                android:layout_height="@dimen/_44pxh"
+                android:layout_marginBottom="@dimen/_14pxv"
+                android:layout_marginStart="@dimen/_6pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="@dimen/_39pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_imggeneralhos"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_imggeneralhos"/>
+            <ImageView android:id="@+id/imageVectorSix"
+                android:layout_height="@dimen/_20pxh"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_marginTop="@dimen/_41pxv"
+                android:layout_width="@dimen/_12pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_vector_teal_405"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_vector_teal_405"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtPrice"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginEnd="@dimen/_82pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_40pxv"
+                android:layout_weight="0.77" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{doctorsRowModel.txtPrice}"
+                style="@style/txtPoppinsregular14" textUnderline="true" tools:text="@string/msg_chirurgie_pro"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtDrSindaHadda"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_58pxh"
+            android:layout_marginStart="@dimen/_58pxh"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{doctorsRowModel.txtDrSindaHadda}"
+            style="@style/txtPoppinsbold15" textUnderline="true" tools:text="@string/msg_dr_sinda_hadda"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtPlasticSurgeon"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_18pxv"
+            android:layout_marginEnd="@dimen/_56pxh"
+            android:layout_marginStart="@dimen/_56pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{doctorsRowModel.txtPlasticSurgeon}"
+            style="@style/txtPoppinsregular14_1" tools:text="@string/lbl_plastic_surgeon"/>
+    </FrameLayout>
+</layout>

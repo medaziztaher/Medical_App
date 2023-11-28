@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="medilinikOneVM" type="com.mohamednethirsapplication.app.modules.medilinikone.data.viewmodel.MedilinikOneVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearMedilinikOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameWelcomescreen"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" style="@style/groupStylewhite_A700cornerRadius">
+            <FrameLayout android:id="@+id/frameStackrectangleone"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_499pxv"
+                android:layout_marginBottom="@dimen/_10pxv" android:layout_width="match_parent">
+                <ImageView android:id="@+id/imageRectangleOne"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_499pxh"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_30pxh}"
+                    imageRes="@{@drawable/img_rectangle1}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle1"/>
+                <LinearLayout android:id="@+id/linearColumnlanguage"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_156pxv"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_156pxv"
+                    android:layout_width="wrap_content" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtLanguage"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_7pxh"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{medilinikOneVM.medilinikOneModel.txtLanguage}"
+                        style="@style/txtInterregular32" tools:text="@string/lbl_welcome_to"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtLanguageOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{medilinikOneVM.medilinikOneModel.txtLanguageOne}"
+                        style="@style/txtPoppinsextrabold64" tools:text="@string/lbl_medilink"/>
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:id="@+id/linearColumndescription"
+                android:layout_gravity="bottom|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_24pxv"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_1">
+                <TextView android:gravity="center_horizontal"
+                    android:id="@+id/txtDescription"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_201pxv"
+                    android:layout_marginEnd="@dimen/_9pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_53pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{medilinikOneVM.medilinikOneModel.txtDescription}"
+                    style="@style/txtPoppinsextralightitalic18" tools:text="@string/msg_link_to_your_d"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearFullbutton"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnGetStarted"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_13pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_13pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_get_started"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_get_started"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="start"
+                    android:id="@+id/txtButtoncopy"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_915pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_6pxv"
+                    android:paddingEnd="@dimen/_15pxh"
+                    android:paddingTop="@dimen/_5pxv"
+                    android:singleLine="true"
+                    android:text="@{medilinikOneVM.medilinikOneModel.txtButtoncopy}"
+                    style="@style/txtSolidRounded" tools:text="@string/lbl_get_started"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

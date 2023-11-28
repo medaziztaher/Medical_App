@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="medilinikTwentyVM" type="com.mohamednethirsapplication.app.modules.mediliniktwenty.data.viewmodel.MedilinikTwentyVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearMedilinikTwen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:gravity="start"
+            android:id="@+id/imageAllheader"
+            android:layout_height="@dimen/_43pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_allheader"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_allheader"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtDoctorSignup"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_26pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{medilinikTwentyVM.medilinikTwentyModel.txtDoctorSignup}"
+            style="@style/txtInterbold26" tools:text="@string/msg_doctor_sign_up"/>
+        <FrameLayout android:id="@+id/frameStackrectanglesix"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_50pxv"
+            android:layout_marginEnd="@dimen/_25pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_73pxv" android:layout_width="@dimen/_355pxh">
+            <ImageView android:id="@+id/imageRectangleSix"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_50pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_rectangle6_white_a700"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle6_white_a700"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguage"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_42pxh"
+                android:layout_marginStart="@dimen/_42pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.11"
+                android:lineSpacingExtra="@dimen/_8pxh"
+                android:singleLine="true"
+                android:text="@{medilinikTwentyVM.medilinikTwentyModel.txtLanguage}"
+                style="@style/txtPoppinsregular16" tools:text="@string/lbl_full_name"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/frameStackrectanglesixOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_50pxv"
+            android:layout_marginEnd="@dimen/_25pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_17pxv" android:layout_width="@dimen/_355pxh">
+            <ImageView android:id="@+id/imageRectangleSixOne"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_50pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_rectangle6"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle6"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguageOne"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_11pxv"
+                android:layout_marginEnd="@dimen/_45pxh"
+                android:layout_marginStart="@dimen/_45pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.11"
+                android:lineSpacingExtra="@dimen/_8pxh"
+                android:singleLine="true"
+                android:text="@{medilinikTwentyVM.medilinikTwentyModel.txtLanguageOne}"
+                style="@style/txtPoppinsregular16" tools:text="@string/lbl_phone_number"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/frameStackrectanglesixTwo"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_50pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_16pxv" android:layout_width="@dimen/_357pxh">
+            <ImageView android:id="@+id/imageRectangleSixTwo"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_50pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_rectangle6_white_a700"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle6_white_a700"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguageTwo"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_45pxh"
+                android:layout_marginStart="@dimen/_45pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.11"
+                android:lineSpacingExtra="@dimen/_8pxh"
+                android:singleLine="true"
+                android:text="@{medilinikTwentyVM.medilinikTwentyModel.txtLanguageTwo}"
+                style="@style/txtPoppinsregular16" tools:text="@string/lbl_email_adress"/>
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:gravity="center_horizontal"
+            android:id="@+id/recyclerListrectanglesixThree"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            itemSpace="@{@dimen/_19pxh}" tools:itemCount="2" tools:listitem="@layout/row_listrectanglesix_three"/>
+    </LinearLayout>
+</layout>

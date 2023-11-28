@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="medilinikSixVM" type="com.mohamednethirsapplication.app.modules.mediliniksix.data.viewmodel.MedilinikSixVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnvector"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:id="@+id/frameAllheader"
+            android:layout_height="@dimen/_78pxv" android:layout_width="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                app:contentInsetStart="0dp" style="@style/groupStyleteal_400_c6">
+                <LinearLayout android:gravity="center_vertical"
+                    android:id="@+id/linearRowvector"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <FrameLayout android:id="@+id/frameStackvector"
+                        android:layout_height="@dimen/_21pxv"
+                        android:layout_marginBottom="@dimen/_1pxv" android:layout_width="@dimen/_55pxh">
+                        <ImageView android:id="@+id/imageVector"
+                            android:layout_gravity="top|start"
+                            android:layout_height="@dimen/_20pxh"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="@dimen/_29pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_vector"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_vector"/>
+                        <ImageView android:id="@+id/imageVectorOne"
+                            android:layout_gravity="bottom|end"
+                            android:layout_height="@dimen/_20pxh"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="@dimen/_26pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_vector_black_900"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_vector_black_900"/>
+                    </FrameLayout>
+                    <ImageView android:id="@+id/imageVectorTwo"
+                        android:layout_height="@dimen/_15pxh"
+                        android:layout_marginStart="@dimen/_7pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_width="@dimen/_29pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_vector_black_900_15x30"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_vector_black_900_15x30"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <FrameLayout android:id="@+id/frameStackellipseone"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_78pxv"
+                android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_186pxh">
+                <ImageView android:id="@+id/imageEllipseOne"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_78pxh"
+                    android:layout_width="@dimen/_186pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse1_78x186}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse1_78x186"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTime"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_39pxh"
+                    android:layout_marginStart="@dimen/_39pxh"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{medilinikSixVM.medilinikSixModel.txtTime}"
+                    style="@style/txt" tools:text="@string/lbl_15_38_pm"/>
+            </FrameLayout>
+        </FrameLayout>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <FrameLayout android:id="@+id/frameStacklanguage"
+                android:layout_height="@dimen/_844pxv"
+                android:layout_width="@dimen/_390pxh" style="@style/groupStylecornerRadius">
+                <LinearLayout android:id="@+id/linearConnect"
+                    android:layout_gravity="start"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtLanguage"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_124pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{medilinikSixVM.medilinikSixModel.txtLanguage}"
+                        style="@style/txtInterlight27" tools:text="@string/msg_add_emergency_c"/>
+                    <FrameLayout android:id="@+id/frameStacklanguageOne"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_383pxv"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_20pxv" android:layout_width="@dimen/_324pxh">
+                        <TextView android:ellipsize="end"
+                            android:gravity="top|start"
+                            android:id="@+id/txtLanguageOne"
+                            android:layout_gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_152pxv"
+                            android:layout_marginEnd="@dimen/_51pxh"
+                            android:layout_marginStart="@dimen/_51pxh"
+                            android:layout_marginTop="@dimen/_152pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{medilinikSixVM.medilinikSixModel.txtLanguageOne}"
+                            style="@style/txtPoppinsregular48" tools:text="@string/lbl_medilink"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtLanguageTwo"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_50pxv"
+                            android:layout_marginEnd="@dimen/_41pxh"
+                            android:layout_marginStart="@dimen/_41pxh"
+                            android:layout_marginTop="@dimen/_50pxv"
+                            android:layout_width="wrap_content"
+                            android:letterSpacing="0.11"
+                            android:lineSpacingExtra="@dimen/_8pxh"
+                            android:singleLine="true"
+                            android:text="@{medilinikSixVM.medilinikSixModel.txtLanguageTwo}"
+                            style="@style/txtPoppinsregular16" tools:text="@string/lbl_relationship"/>
+                        <ImageView android:id="@+id/imageFreeVectorE"
+                            android:layout_gravity="top|center"
+                            android:layout_height="@dimen/_167pxh"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_35pxh"
+                            android:layout_marginStart="@dimen/_35pxh"
+                            android:layout_width="@dimen/_240pxh"
+                            android:scaleType="fitXY"
+                            imageRes="@{@drawable/img_freevectore}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_freevectore"/>
+                        <LinearLayout android:id="@+id/linearSaisie"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="match_parent" android:orientation="vertical">
+                            <FrameLayout
+                                android:id="@+id/frameStackrectanglesix"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="@dimen/_50pxv"
+                                android:layout_marginStart="@dimen/_1pxh" android:layout_width="@dimen/_323pxh">
+                                <ImageView
+                                    android:id="@+id/imageRectangleSix"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_50pxh"
+                                    android:layout_width="match_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_rectangle6_white_a700"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle6_white_a700"/>
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtLanguageThree"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_marginEnd="@dimen/_46pxh"
+                                    android:layout_marginStart="@dimen/_46pxh"
+                                    android:layout_marginTop="@dimen/_8pxv"
+                                    android:layout_width="wrap_content"
+                                    android:letterSpacing="0.11"
+                                    android:lineSpacingExtra="@dimen/_9pxh"
+                                    android:singleLine="true"
+                                    android:text="@{medilinikSixVM.medilinikSixModel.txtLanguageThree}"
+                                    style="@style/txtPoppinsregular15" tools:text="@string/lbl_name"/>
+                            </FrameLayout>
+                            <FrameLayout
+                                android:id="@+id/frameStackrectanglesixOne"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="@dimen/_50pxv"
+                                android:layout_marginEnd="@dimen/_1pxh"
+                                android:layout_marginTop="@dimen/_9pxv" android:layout_width="@dimen/_324pxh">
+                                <ImageView
+                                    android:id="@+id/imageRectangleSixOne"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_50pxh"
+                                    android:layout_width="match_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_rectangle6_white_a700"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle6_white_a700"/>
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtLanguageFour"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_11pxv"
+                                    android:layout_marginEnd="@dimen/_43pxh"
+                                    android:layout_marginStart="@dimen/_43pxh"
+                                    android:layout_marginTop="@dimen/_11pxv"
+                                    android:layout_width="wrap_content"
+                                    android:letterSpacing="0.11"
+                                    android:lineSpacingExtra="@dimen/_8pxh"
+                                    android:singleLine="true"
+                                    android:text="@{medilinikSixVM.medilinikSixModel.txtLanguageFour}"
+                                    style="@style/txtPoppinsregular16" tools:text="@string/lbl_relationship"/>
+                            </FrameLayout>
+                            <FrameLayout
+                                android:id="@+id/frameStackrectanglesixTwo"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="@dimen/_50pxv"
+                                android:layout_marginEnd="@dimen/_1pxh"
+                                android:layout_marginStart="@dimen/_2pxh"
+                                android:layout_marginTop="@dimen/_9pxv" android:layout_width="@dimen/_321pxh">
+                                <ImageView
+                                    android:id="@+id/imageRectangleSixTwo"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_50pxh"
+                                    android:layout_width="match_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_rectangle6"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle6"/>
+                                <LinearLayout
+                                    android:id="@+id/linearRowlanguageFive"
+                                    android:layout_gravity="bottom|end"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_7pxv"
+                                    android:layout_marginEnd="@dimen/_11pxh"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_marginTop="@dimen/_10pxv"
+                                    android:layout_width="match_parent" android:orientation="horizontal">
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtLanguageFive"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_1pxv"
+                                    android:layout_marginTop="@dimen/_2pxv"
+                                    android:layout_weight="0.91"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{medilinikSixVM.medilinikSixModel.txtLanguageFive}"
+                                    style="@style/txtPoppinsextralightitalic19" tools:text="@string/lbl_phone_number2"/>
+                                    <ImageView
+                                    android:id="@+id/imageVectorThree"
+                                    android:layout_height="@dimen/_33pxh"
+                                    android:layout_marginStart="@dimen/_125pxh"
+                                    android:layout_width="@dimen/_12pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_vector_cyan_100"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_vector_cyan_100"/>
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <TextView android:ellipsize="end"
+                        android:gravity="end"
+                        android:id="@+id/txtAddanothereme"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_9pxh"
+                        android:layout_marginStart="@dimen/_180pxh"
+                        android:layout_marginTop="@dimen/_47pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{medilinikSixVM.medilinikSixModel.txtAddanothereme}"
+                        style="@style/txtPoppinssemibold12"
+                        textUnderline="true" tools:text="@string/msg_add_another_eme"/>
+                    <FrameLayout android:id="@+id/frameNextbutton"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_73pxv"
+                        android:layout_marginBottom="@dimen/_20pxv"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_width="@dimen/_325pxh" style="@style/groupStyleteal_400_c6cornerRadius">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtSignin"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_17pxv"
+                            android:layout_marginEnd="@dimen/_40pxh"
+                            android:layout_marginStart="@dimen/_40pxh"
+                            android:layout_marginTop="@dimen/_17pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{medilinikSixVM.medilinikSixModel.txtSignin}"
+                            style="@style/txtPoppinssemibold25" tools:text="@string/lbl_next"/>
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:id="@+id/btnNext"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:paddingBottom="@dimen/_17pxv"
+                            android:paddingEnd="@dimen/_30pxh"
+                            android:paddingStart="@dimen/_30pxh"
+                            android:paddingTop="@dimen/_17pxv"
+                            android:singleLine="true"
+                            android:text="@string/lbl_next"
+                            android:textAllCaps="false"
+                            style="@style/btnSolidRounded_1" tools:text="@string/lbl_next"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

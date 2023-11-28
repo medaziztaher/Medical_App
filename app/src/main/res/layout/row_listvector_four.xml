@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listvectorFourRowModel" type="com.mohamednethirsapplication.app.modules.medilinikfifteen.data.model.ListvectorFourRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowvector"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylegray_1">
+        <ImageView android:id="@+id/imageVectorFour"
+            android:layout_height="@dimen/_26pxh"
+            android:layout_marginBottom="@dimen/_9pxv"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_width="@dimen/_26pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_vector_white_a700"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_vector_white_a700"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtLanguageTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12pxv"
+            android:layout_marginStart="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_weight="0.19" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listvectorFourRowModel.txtLanguageTwo}"
+            style="@style/txtIntersemibold14_1" tools:text="@string/lbl_by_date"/>
+        <ImageView android:id="@+id/imageVectorTwo"
+            android:layout_height="@dimen/_26pxh"
+            android:layout_marginBottom="@dimen/_9pxv"
+            android:layout_marginEnd="@dimen/_9pxh"
+            android:layout_marginStart="@dimen/_43pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_width="@dimen/_192pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_vector2"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_vector2"/>
+    </LinearLayout>
+</layout>
